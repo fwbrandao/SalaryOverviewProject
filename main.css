@@ -1,0 +1,116 @@
+/*-------------------------------------------------
+ =  Table of Css
+
+ 1.General code                             
+ 2.Form code                              
+ 3.Logo                          
+ 4.Slider                  
+ 5.Button       
+ 6.Header
+ 7.Title code                       
+ 8.Section code 
+ 9.About section                              
+ 10.Service section                           
+ 11.Parallax Section                             
+ 12.Pricing Section                               
+ 13.Portfolio Section
+ 14.Accordion Tab                             
+ 15.Testimonial section                             
+ 16.Team section                            
+ 17.Progress bar section
+ 18.Fun facts section
+ 19.Quote section
+ 20.Subscription section
+ 21.Contact form section
+ 22.Footer section
+ 23.Blog page 
+ 24.Responsive Media Quaries  
+-------------------------------------------------*/
+
+
+/*-------------------------------------------------------*/
+/* 1. General code
+/*-------------------------------------------------------*/
+
+body {
+   
+    font: 20px graduate, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+}
+
+p {font-size: 16px;}
+.margin {margin-bottom: 45px;}
+.bg-1 {
+      background-color: white; /* Green */
+      color: #ffffff;
+        font-size: 30px;
+  }
+.bg-2 {
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 {
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 {
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+}
+
+.container-fluid {
+    
+    padding-top: 35px;
+    padding-bottom: 45px;
+}
+
+.navBar {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border: 0;
+    border-radius: 0;
+    font-size: 25px;
+    letter-spacing: 5px;
+    padding-left: 15px;
+    text-shadow: 0.16em 0.16em 0.5em;
+
+}
+
+.navBar-nav li a:hover {
+    color: #1abc9c !important;
+    
+}
+
+#input1,#input2{
+    color: black;
+    width: 80px;
+    height: 42px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+td {
+    text-align: left;
+    color: red;
+}
+ 
+.netSalary {
+    color: green;
+    font-size: 120%;
+}
+
+.netBonus {
+    color: green;
+    font-size: 120%;
+}
+
+
+
+
+
+
+
+
+
