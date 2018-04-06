@@ -1,0 +1,142 @@
+/*-------------------------------------------------------*/
+/* 1. General code
+/*-------------------------------------------------------*/
+
+body {
+   
+    font: 20px graduate, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+}
+
+p {font-size: 16px;}
+.margin {margin-bottom: 45px;}
+.bg-1 {
+      background-color: white; /* Green */
+      color: #ffffff;
+        font-size: 30px;
+  }
+.bg-2 {
+      background-color: #4D5BC4; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 {
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 {
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+}
+
+.container-fluid {
+    
+    padding-top: 35px;
+    padding-bottom: 45px;
+}
+
+.navBar {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border: 0;
+    border-radius: 0;
+    font-size: 25px;
+    letter-spacing: 5px;
+    padding-left: 15px;
+    /*text-shadow: 0.1em 0.1em 0.3em ;*/
+    
+
+}
+
+.infoBar {
+    font-family: sans-serif;
+    display: block;
+    color: white;
+    width: 60%;
+    margin: 1px auto;
+    background-color: #4D5BC4;
+    border-radius: 10px;
+    padding: 15px 0 5px 0;
+}
+
+.infoBar2 {
+    font-family: sans-serif;
+    display: block;
+    color: white;
+    width: 90%;
+    margin: -40px auto 0;
+    background-color: #4D5BC4;
+    border-radius: 10px;
+    padding: 15px 5px 10px 5px;
+}
+
+.navBar-nav li a:hover {
+    color: #1abc9c !important;
+    
+}
+
+#input1,#input2{
+    color: black;
+    width: 90px;
+    height: 42px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-animation-duration: 3s;
+    
+}
+
+td {
+    text-align: left;
+    color: blue;
+}
+ 
+.netSalary {
+    color: green;
+    font-size: 120%;
+}
+
+.netBonus {
+    color: green;
+    font-size: 120%;
+}
+
+.greeting {
+    color: #2f2f2f;
+    text-align: right;
+    padding-right: 30px;
+    height:
+    float: right;
+    
+    
+    
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .navBar{
+        text-align: center;
+    }
+    
+#greeting {
+      
+    font-size: 90%;
+    align-content: center;
+    margin-right: 48px;
+        
+    }
+    
+    .table-responsive{
+    width: 100%;
+}
+
+    
+    
+}  /* end media query*/
+
+
+
+
+
+
+
