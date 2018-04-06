@@ -2,7 +2,8 @@
 
 <html lang="en">
     
-    <!-------Head------->
+<!-------Head------->
+    
 <head>
     
     <!----This is a salary tax calculator--->
@@ -15,66 +16,76 @@
     
     <!-- THIS META TAG IS FOR SEO ON ALL MAJOR BROWSERS -->
     <meta name="Description" content="App to calculate you income tax."/>
-    
     <!-- THIS IS THE FAVORITE ICON THAT SHOWS ON THE BROWSER TITLE BAR -->
     <link rel="shortcut icon" href="../salaryTaxOverview/images/analysisLogo.jpn.png" type="image/x-icon">
     <link rel="icon" href="../salaryTaxOverview/images/analysisLogo.jpn.png" type="image/x-icon">
-    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
     <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    
     <!-- ANIMATE CSS CDN FOR ALL THE ANIMATION FEATURES -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
-    
     <!--FONT AWESOME-->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="CSS/main.css">
     
 </head>
-    <!-------Head Ends------->
     
-    <!-------Body------->
+<!-------Head Ends------->
+    
+<!-------Body------->
+    
 <body>
     
         <nav class="navBar bg-1 navBar-default" >
             <img src="images/analysisLogo.jpn.png" alt="Salary Analyzer" height="46" width="60">
             <a class="navBar-brand" href="#">Salary Overview</a>
-            <div class="greeting animated fadeInRight" >
+            <div class=".greeting { animated fadeInRight" >
             
-            <h1 id="greeting"></h1></div>
+            <h1 id="greeting" class="greeting"></h1></div>
         </nav> 
         
-        
+     <div class="container-fluid text-center">
+        <div class="row infoBar">
+            <div><label>Tax and Contribution Calculator 2017 - 2018</label></div>
+            <hr>
+            <p>England, Wales and Northen Ireland</p>
+        </div>
+    </div> 
+   
+    <div class="container-fluid text-center">
+        <div class="row infoBar2">
+            <p>Please enter your Gross Annual Salary below to find out how much Tax you will pay.</p>
+            <hr>
+            <p>You can also check how much your salary will be per Week, Month and Year after tax, as well as any bonus you may have.</p>
+        </div>
+    </div>
     
     
 <div class="container-fluid bg-2 text-center">
     <div class="row">
-        <div class="col-sm-2"><label>Enter your Salary</label></div>
+        <div class="col-sm-2"><label>Enter your gross Annual Salary</label></div>
         <div class="col-sm-3">
-            <input class="animated fadeInDown" type="text" value=0 id="input1" />
-            <a id="button1" href="#" class="btn btn-default btn-lg">
+            <input class=""  type="text" value=0 id="input1" />
+            <a id="button1" href="#results" class="btn btn-info btn-lg">
             <span class="fa fa-calculator" aria-hidden="true"></span> Calculate
             </a>
          </div>
         
+        
          <div class="col-sm-4"><label>Tax Allowance - click to view the hmrc website </label></div>
          <div class="col-sm-2">
-            <a id="button3" href="https://www.gov.uk/government/publications/rates-and-allowances-income-tax/income-tax-rates-and-allowances-current-and-past" class="btn btn-default btn-lg">
+            <a id="button3" href="https://www.gov.uk/government/publications/rates-and-allowances-income-tax/income-tax-rates-and-allowances-current-and-past" target="_blank" class="btn btn-default btn-lg">
             <span class="glyphicon glyphicon-info-sign"></span></a>
          </div>
     </div>
-    
+    <br>
     <div class="row">
     <div class="col-sm-2"><label>Bonus Calculater</label></div>
     <div class="col-sm-3">
-          <select id="input2">
+          <select id="input2" class="">
                      <option value="0">0%</option>
                      <option value="0.05">5%</option>
                      <option value="0.10">10%</option>
@@ -98,53 +109,61 @@
                      <option value="2">100%</option>
             </select>
 
-            <a id="button2" href="#" class="btn btn-default btn-lg">
-            <span class="fa fa-calculator" aria-hidden="true"></span> Calculate
+            <a id="button2" href="#results" class="btn btn-info btn-lg">
+            <span class="fa fa-calculator" aria-hidden="true"></span>Calculate
             </a>
          </div>
         <div class="col-sm-4"><label>MoneySupermarket.com Tax free saving advice</label></div>
          <div class="col-sm-2">
-            <a id="button4" href="http://www.moneysavingexpert.com/savings/tax-free-savings" class="btn btn-default btn-lg">
+            <a id="button4" href="http://www.moneysavingexpert.com/savings/tax-free-savings" target="_blank" class="btn btn-default btn-lg">
             <span class="glyphicon glyphicon-info-sign"></span></a>
          </div>
       </div>    
 </div>
     
-    <div class="container-fluid bg-3 text-center">
+    <div id="results" class="container-fluid bg-3 text-center">
     <div class="row">
         <div class="col-sm-4">
             <div class="table-responsive">
                                 <table class="table">
-                            <thead>
+                                <thead>
                                 <tr>
                                 <th>Description</th>
                                 <th>Totals</th>
                                 </tr>
-                            </thead>
-                            <tbody>
+                                </thead>
+                                <tbody>
                                 <tr>
-                                <td>Gross Salary</td>
-                                <td id="grossValue">0</td>
+                                <td class="gs wow fadeInLeft" data-wow-delay=".5s">Gross Salary</td>
+                                <td id="grossValue" class="numberColumn">0.00</td>
                                 </tr>
                                 <tr>
-                                <td>Tax Free Allowance</td>
-                                <td id="freeValue">0</td>
+                                <td class="tfa wow fadeInLeft" data-wow-delay=".7s">Tax Free Allowance</td>
+                                <td id="freeValue" class="numberColumn">11,509.00</td>
                                 </tr>
                                 <tr>
-                                <td>Tax @ 20%</td>
-                                <td id="p20Value">0</td>
+                                <td class="t20 wow fadeInLeft" data-wow-delay=".8s">Tax @ 20%</td>
+                                <td id="p20Value" class="numberColumn">0.00</td>
                                 </tr>
                                 <tr>
-                                <td>Tax @ 40%</td>
-                                <td id="p40Value">0</td>
+                                <td class="t40 wow fadeInLeft" data-wow-delay=".9s">Tax @ 40%</td>
+                                <td id="p40Value" class="numberColumn">0.00</td>
                                 </tr>
                                 <tr>
-                                <td class="netSalary">Net Salary</td>
-                                <td class="netSalary" id="netValue">0</td>
+                                <td class="netSalary wow fadeInLeft" data-wow-delay="1s">Net Yearly Salary</td>
+                                <td class="netSalary" id="netValue" class="numberColumn">0.00</td>
                                 </tr>
                                 <tr>
-                                <td class="netBonus">Bonus</td>
-                                <td class="netBonus" id="bonusValue">0</td>
+                                <td class="netSalary wow fadeInLeft" data-wow-delay="1s">Monthly Salary</td>
+                                <td class="netSalary" id="netMValue" class="numberColumn">0.00</td>
+                                </tr>
+                                <tr>
+                                <td class="netSalary wow fadeInLeft" data-wow-delay="1s">Weekly Salary</td>
+                                <td class="netSalary" id="netWValue" class="numberColumn">0.00</td>
+                                </tr>
+                                <tr>
+                                <td class="netBonus wow fadeInLeft" data-wow-delay="1.1s">Bonus</td>
+                                <td class="netBonus" id="bonusValue" class="numberColumn">0.00</td>
                                 </tr>
                             </tbody>
                           </table>
@@ -169,29 +188,41 @@
         </div>
     
     
-    <!-------Footer------->
+<!-------Footer------->
     
  <footer class="container-fluid bg-4 text-center"><div class="socialMedia">
-                <a href="https://www.linkedin.com/in/fernando-brandao-170060151/" class="smLogo" href="#"><i class="fab fa-linkedin" aria-hidden="true"> </i></a>
      
-                <a href="https://twitter.com/fwbrandao" class="smLogo" href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/fernando-brandao-170060151/" target="_blank" class="smLogo" href="#"><i class="fab fa-linkedin" aria-hidden="true"> </i></a>
      
-                <a href="http://brand.fernandobrandao.co.uk/#home" class="smLogo" href="#"><i class="fab fa-blogger" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/fwbrandao" target="_blank" class="smLogo" href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
      
-                <a href="https://www.instagram.com/nando_brandao_/" class="smLogo" href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-            </div> <p>by <a href="">Fernando Brandao</a></p></footer>
+                <a href="http://brand.fernandobrandao.co.uk/#home" target="_blank" class="smLogo" href="#"><i class="fab fa-blogger" aria-hidden="true"></i></a>
+     
+                <a href="https://github.com/fwbrandao" target="_blank" class="smLogo" href="#"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </div> <p>by <a href="http://fernandobrandao.co.uk" target="_blank">Fernando Brandao</a></p>
+     
+</footer>
 
-    <!-------Footer ends------->
+<!-------Footer ends------->
     
-    <!-------Script------------>
+<!-------Script------------>
         
 <!--    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>-->
     <script src="http://canvasjs.com/assets/script/canvasjs.min.js" type="text/javascript"></script>
+    
+    <!-- Wow Animation -->
+    <script type="text/javascript" src="../salaryTaxOverview/JS/wow.min.js"></script>
+    
+    <script> 
+        new WOW().init();
+    
+    </script>
      <script src="JS/main.js"></script>
     
     
    
 </body>
-    <!-------Body Ends------->
+    
+<!-------Body Ends------->
     
 </html>
